@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta
+            name="surface-hint"
+            content="desktop-responsive"
+            data-hint="injected-ffc2e83d85"
+        />
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link rel="icon" type="image/png" href="images/blanco.png" />
+        <title>MaccDecor | Eventos y Decoraciones</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+            rel="stylesheet"
+        />
+        <link
+            type="text/css"
+            href="https://fonts.googleapis.com/css2?family=Google+Symbols:opsz,wght,FILL,GRAD,ROND@24,400,0,0,50&amp;icon_names=link"
+            rel="stylesheet"
+        />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body class="bg-slate-50 text-slate-800 antialiased">
+        <!-- Navegación -->
+        <nav
+            class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm border-b border-pink-100"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <!-- Logo -->
+                    <div
+                        class="flex-shrink-0 flex items-center gap-2 cursor-pointer"
+                        onclick="window.scrollTo(0, 0)"
+                    >
+                        <img
+                            src="images/negro.png"
+                            alt="MaccDecor Logo"
+                            class="w-20 h-18"
+                        />
+                        <span
+                            class="font-bold text-2xl tracking-tight text-slate-800 serif"
+                            >MaccDecor</span
+                        >
+                    </div>
+
+                    <!-- Navegación -->
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a
+                            class="text-slate-600 hover:text-pink-500 font-semibold transition"
+                            href="#services"
+                            >Servicios</a
+                        >
+                        <a
+                            class="text-slate-600 hover:text-pink-500 font-semibold transition"
+                            href="#portfolio"
+                            >Portafolio</a
+                        >
+                        <a
+                            class="text-slate-600 hover:text-pink-500 font-semibold transition"
+                            href="#calculator"
+                            >Cotizador</a
+                        >
+                        <!-- Language Toggle -->
+                        <div
+                            class="inline-flex rounded-full border border-slate-200 overflow-hidden text-sm font-bold shadow-sm"
+                        >
+                            <a
+                                class="px-3 py-1.5 bg-white text-slate-600 hover:bg-slate-100 transition"
+                                href="index.html"
+                                >EN</a
+                            >
+                            <span
+                                class="px-3 py-1.5 bg-pink-500 text-white cursor-default"
+                                >ES</span
+                            >
+                        </div>
+                        <a
+                            class="px-5 py-2 rounded-full bg-pink-500 text-white font-bold hover:bg-pink-600 transition shadow-lg shadow-pink-200"
+                            href="#contact"
+                            >Reservar</a
+                        >
+                    </div>
+
+                    <!-- Botón menú móvil -->
+                    <div class="md:hidden flex items-center">
+                        <button
+                            class="text-slate-600 hover:text-pink-500 focus:outline-none"
+                            id="mobile-menu-btn"
+                        >
+                            <span class="material-symbols-outlined text-3xl"
+                                >menu</span
+                            >
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Panel Menú Móvil -->
+            <div
+                class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg"
+                id="mobile-menu"
+            >
+                <div class="px-4 pt-2 pb-6 space-y-2">
+                    <a
+                        class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-pink-50 rounded-md"
+                        href="#services"
+                        >Servicios</a
+                    >
+                    <a
+                        class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-pink-50 rounded-md"
+                        href="#portfolio"
+                        >Portafolio</a
+                    >
+                    <a
+                        class="block px-3 py-2 text-base font-medium text-slate-700 hover:bg-pink-50 rounded-md"
+                        href="#calculator"
+                        >Cotizador</a
+                    >
+                    <a
+                        class="block px-3 py-2 text-base font-medium text-pink-600 font-bold hover:bg-pink-50 rounded-md"
+                        href="#contact"
+                        >Reservar</a
+                    >
+                    <!-- Mobile Language Toggle -->
+                    <div
+                        class="flex items-center gap-2 px-3 pt-3 mt-2 border-t border-slate-100"
+                    >
+                        <span class="text-sm text-slate-500 font-medium"
+                            >Idioma:</span
+                        >
+                        <div
+                            class="inline-flex rounded-full border border-slate-200 overflow-hidden text-sm font-bold shadow-sm"
+                        >
+                            <a
+                                class="px-3 py-1.5 bg-white text-slate-600 hover:bg-slate-100 transition"
+                                href="index.html"
+                                >EN</a
+                            >
+                            <span
+                                class="px-3 py-1.5 bg-pink-500 text-white cursor-default"
+                                >ES</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Sección Hero -->
+        <header class="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img
+                    alt="Fondo Festivo"
+                    class="w-full h-full object-cover opacity-20"
+                    src="blob:https://48yn0q6pwa07k4d0p4qpevnle3vdukmhxo6vxhmohukcchzi3i-h858592233.scf.usercontent.goog/628b90f7-f1f1-40f3-ab61-eddf81ee13fc"
+                    style=""
+                />
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-white/80 to-slate-50"
+                ></div>
+            </div>
+            <div
+                class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+            >
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-100 text-yellow-800 text-sm font-bold mb-6 shadow-sm"
+                >
+                    <span class="material-symbols-outlined text-lg">star</span>
+                    La Triple Amenaza para tu Fiesta
+                </div>
+                <h1
+                    class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 leading-tight"
+                >
+                    Haciendo tus Eventos
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600"
+                        >Deliciosos</span
+                    >
+                    y
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400"
+                        >Mágicos</span
+                    >
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-600 mb-10">
+                    Soy tu solución completa para postres gourmet, decoraciones
+                    impresionantes y pintura facial profesional. ¡Creemos
+                    recuerdos que se vean tan bien como saben!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                        class="px-8 py-4 rounded-full bg-slate-900 text-white font-bold hover:bg-slate-800 transition shadow-xl hover:shadow-2xl hover:-translate-y-1 transform duration-200"
+                        href="#services"
+                    >
+                        Explorar Servicios
+                    </a>
+                    <a
+                        class="px-8 py-4 rounded-full bg-white text-slate-900 border-2 border-slate-200 font-bold hover:border-pink-400 hover:text-pink-500 transition shadow-sm hover:shadow-md"
+                        href="#calculator"
+                    >
+                        Obtener Cotización
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Sección Acerca de -->
+        <section class="py-12 bg-white border-y border-slate-100">
+            <div
+                class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8"
+            >
+                <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 relative">
+                    <img
+                        alt="Perfil"
+                        class="w-full h-full object-cover rounded-full border-4 border-pink-100 shadow-lg"
+                        src="blob:https://48yn0q6pwa07k4d0p4qpevnle3vdukmhxo6vxhmohukcchzi3i-h858592233.scf.usercontent.goog/65025462-3016-4393-b041-811801090846"
+                        style=""
+                    />
+                    <div
+                        class="absolute bottom-0 right-0 bg-green-400 w-8 h-8 rounded-full border-4 border-white flex items-center justify-center shadow-sm"
+                        title="Disponible para reservas"
+                    >
+                        <span
+                            class="material-symbols-outlined text-white text-sm font-bold"
+                            >check</span
+                        >
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold text-slate-900 serif">
+                        ¡Conoce a la Fundadora, Cira!
+                    </h2>
+                    <p class="text-slate-600 mt-2">
+                        Creo que toda fiesta necesita tres cosas: azúcar, brillo
+                        y sonrisas. Con más de 25 años de experiencia en
+                        repostería y bellas artes, combiné mis pasiones para
+                        ofrecer un servicio boutique único para cumpleaños,
+                        bodas y eventos comunitarios.
+                    </p>
+                </div>
+                <div class="flex gap-6 text-slate-400">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-pink-500">500+</div>
+                        <div class="text-xs uppercase font-bold tracking-wider">
+                            Pasteles
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-500">
+                            100+
+                        </div>
+                        <div class="text-xs uppercase font-bold tracking-wider">
+                            Eventos
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-500">1k+</div>
+                        <div class="text-xs uppercase font-bold tracking-wider">
+                            Caritas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pestañas Interactivas de Servicios -->
+        <section class="py-20 bg-slate-50" id="services">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-slate-900 serif mb-4"
+                    >
+                        Lo Que Traigo a la Fiesta
+                    </h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto">
+                        Elige una categoría para ver muestras de mi trabajo y
+                        precios.
+                    </p>
+                </div>
+                <!-- Navegación de Pestañas -->
+                <div class="flex justify-center mb-10">
+                    <div
+                        class="inline-flex bg-white p-1.5 rounded-full shadow-md border border-slate-100 overflow-x-auto max-w-full"
+                    >
+                        <button
+                            class="service-tab active px-6 py-3 rounded-full text-sm sm:text-base font-bold transition flex items-center gap-2 whitespace-nowrap"
+                            id="tab-btn-pastries"
+                            onclick="switchTab('pastries')"
+                        >
+                            <span class="material-symbols-outlined"
+                                >bakery_dining</span
+                            >
+                            Postres y Dulces
+                        </button>
+                        <button
+                            class="service-tab px-6 py-3 rounded-full text-sm sm:text-base font-bold text-slate-600 hover:text-purple-600 transition flex items-center gap-2 whitespace-nowrap"
+                            id="tab-btn-decor"
+                            onclick="switchTab('decor')"
+                        >
+                            <span class="material-symbols-outlined"
+                                >filter_vintage</span
+                            >
+                            Decoraciones
+                        </button>
+                        <button
+                            class="service-tab px-6 py-3 rounded-full text-sm sm:text-base font-bold text-slate-600 hover:text-blue-600 transition flex items-center gap-2 whitespace-nowrap"
+                            id="tab-btn-facepaint"
+                            onclick="switchTab('facepaint')"
+                        >
+                            <span class="material-symbols-outlined"
+                                >palette</span
+                            >
+                            Pintura Facial
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contenido: Postres -->
+                <div class="tab-content fade-in block" id="content-pastries">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <!-- imágenes -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <img
+                                alt="Gelatina Artística Especial"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/specialty_jelly_cake.jpeg"
+                            />
+                            <img
+                                alt="Arte Floral en Gelatina"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/cake3.jpeg"
+                            />
+                            <img
+                                alt="Fresa con Chocolate"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/cupcakes.jpeg"
+                            />
+                            <img
+                                alt="Shots de Tres Leches"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/pastries1.jpeg"
+                            />
+                            <img
+                                alt="Fresa con Chocolate"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/cake2.jpeg"
+                            />
+                            <img
+                                alt="Gelatina Artística"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/specialty_jelly_cake.jpeg"
+                            />
+                        </div>
+
+                        <!-- Menú -->
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-sm border border-pink-50"
+                        >
+                            <h3
+                                class="text-2xl font-bold text-pink-600 mb-6 flex items-center gap-2"
+                            >
+                                <span class="material-symbols-outlined"
+                                    >restaurant_menu</span
+                                >
+                                Nuestro Menú
+                            </h3>
+
+                            <div class="mb-8">
+                                <h4
+                                    class="font-bold text-slate-900 uppercase tracking-wider text-sm mb-4 border-b pb-2"
+                                >
+                                    Por Docena
+                                </h4>
+                                <ul class="space-y-2">
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Flan / Gelatina</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$45</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Choco Flan</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$55</span
+                                        >
+                                    </li>
+                                    <h4>
+                                        <strong
+                                            ><em>Vasitos de Postre</em></strong
+                                        >
+                                    </h4>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Vasitos de Arroz con Leche</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$40</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Vasitos de Cheesecake</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$50</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span
+                                            >Vasitos de Fresa con
+                                            Chocolate</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$50</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span
+                                            >Vasitos de Mousse de
+                                            Chocolate</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$50</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Vasitos de Fresas con Crema</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$50</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Shot de Tres Leches</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$55</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4
+                                    class="font-bold text-slate-900 uppercase tracking-wider text-sm mb-4 border-b pb-2"
+                                >
+                                    Órdenes Individuales / Especialidades
+                                </h4>
+                                <ul class="space-y-2">
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Plato de Frutas</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$10</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span
+                                            >Piña Colada / Gansito /
+                                            Galleta</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$55</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Flan Entero</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$60</span
+                                        >
+                                    </li>
+                                    <li
+                                        class="flex justify-between text-slate-700"
+                                    >
+                                        <span>Choco Flan Entero</span
+                                        ><span class="font-bold text-pink-500"
+                                            >$65</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="mt-8 bg-blue-50 p-4 rounded-xl flex items-start gap-3"
+                            >
+                                <span
+                                    class="material-symbols-outlined text-blue-500"
+                                    >info</span
+                                >
+                                <p class="text-xs text-slate-700">
+                                    Los precios reflejan diseños estándar. Las
+                                    gelatinas artísticas 3D (Pavorreales/Flores)
+                                    pueden variar. ¡Contáctame para cotizaciones
+                                    personalizadas!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido: Decoraciones -->
+                <div class="tab-content hidden" id="content-decor">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <!-- Lado de Información -->
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-sm border border-purple-50 order-2 md:order-1"
+                        >
+                            <h3
+                                class="text-2xl font-bold text-purple-600 mb-4 flex items-center gap-2"
+                            >
+                                <span class="material-symbols-outlined"
+                                    >celebration</span
+                                >
+                                Paquetes de Decoración
+                            </h3>
+                            <p class="text-slate-600 mb-6">
+                                Transformo espacios ordinarios en ambientes
+                                mágicos. Ya sea un cumpleaños o un baby shower
+                                elegante, me encargo del montaje y desmontaje
+                                para que tú solo disfrutes. 1 hora de pintura
+                                facial y globos incluida.
+                            </p>
+                            <div class="space-y-6">
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0"
+                                    >
+                                        <span class="material-symbols-outlined"
+                                            >shopping_bag</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">
+                                            Instalaciones de Globos
+                                        </h4>
+                                        <p class="text-sm text-slate-600">
+                                            Arcos orgánicos, guirnaldas y
+                                            columnas personalizadas con tu
+                                            paleta de colores.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0"
+                                    >
+                                        <span class="material-symbols-outlined"
+                                            >brush</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">
+                                            Pintura Facial
+                                        </h4>
+                                        <p class="text-sm text-slate-600">
+                                            Pintura facial profesional por 1
+                                            hora incluida — mariposas,
+                                            superhéroes, princesas y diseños
+                                            personalizados.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0"
+                                    >
+                                        <span class="material-symbols-outlined">
+                                            toys
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">
+                                            Globos Torcidos
+                                        </h4>
+                                        <p class="text-sm text-slate-600">
+                                            Globos torcidos divertidos para
+                                            todas las edades — espadas, perros,
+                                            flores y más para animar cualquier
+                                            evento.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="mt-8 bg-blue-50 p-4 rounded-xl flex items-start items-center gap-3"
+                                >
+                                    <span
+                                        class="material-symbols-outlined text-blue-500"
+                                        >info</span
+                                    >
+                                    <p class="text-xs text-slate-700">
+                                        Solo colores básicos de globos
+                                        disponibles, consulta para solicitudes
+                                        de temas específicos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lado de Galería -->
+                        <div class="grid grid-cols-2 gap-4 order-1 md:order-2">
+                            <img
+                                alt="Arco de Globos"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/BallonArch4.jpeg"
+                            />
+                            <img
+                                alt="Montaje de Mesa"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/BallonArch2.jpeg"
+                            />
+                            <img
+                                alt="Tema Selva"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/BallonArch6.jpeg"
+                            />
+                            <img
+                                alt="Picnic Boho"
+                                class="rounded-2xl shadow-lg hover:scale-105 transition duration-300 w-full object-cover aspect-[4/3]"
+                                src="images/BallonArch5.jpeg"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido: Pintura Facial -->
+                <div class="tab-content hidden" id="content-facepaint">
+                    <div
+                        class="bg-white rounded-3xl overflow-hidden shadow-sm border border-blue-50"
+                    >
+                        <div class="p-8 md:p-12 text-center bg-blue-50">
+                            <h3
+                                class="text-3xl font-bold text-blue-700 mb-2 serif"
+                            >
+                                Diversión con Pintura Facial
+                            </h3>
+                            <p class="text-blue-600 max-w-2xl mx-auto">
+                                Usando solo pinturas de grado cosmético
+                                aprobadas por la FDA. ¡Hipoalergénicas y fáciles
+                                de quitar!
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-4 gap-0">
+                            <div
+                                class="group relative overflow-hidden aspect-[4/3] md:aspect-auto md:h-64"
+                            >
+                                <img
+                                    alt="Cara de Tigre"
+                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                                    src="images/paint3.jpeg"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition"
+                                >
+                                    <span class="text-white font-bold"
+                                        >Animales Salvajes</span
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="group relative overflow-hidden aspect-[4/3] md:aspect-auto md:h-64"
+                            >
+                                <img
+                                    alt="Cara de Mariposa"
+                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                                    src="images/paint5.jpeg"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition"
+                                >
+                                    <span class="text-white font-bold"
+                                        >Mariposas Brillantes</span
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="group relative overflow-hidden aspect-[4/3] md:aspect-auto md:h-64"
+                            >
+                                <img
+                                    alt="Cara de Superhéroe"
+                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                                    src="images/paint4.jpeg"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition"
+                                >
+                                    <span class="text-white font-bold"
+                                        >Superhéroes</span
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="group relative overflow-hidden aspect-[4/3] md:aspect-auto md:h-64"
+                            >
+                                <img
+                                    alt="Arte Floral en Mejilla"
+                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                                    src="images/paint6.jpeg"
+                                />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition"
+                                >
+                                    <span class="text-white font-bold"
+                                        >Arte Floral en Mejilla</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 grid md:grid-cols-3 gap-8 text-center">
+                            <div
+                                class="p-4 rounded-xl bg-slate-50 border border-slate-100"
+                            >
+                                <div class="text-3xl mb-2">⚡</div>
+                                <h4 class="font-bold text-slate-800">
+                                    Velocidad
+                                </h4>
+                                <p class="text-sm text-slate-500">
+                                    10-12 niños por hora para diseños
+                                    estándar.<br />(Máximo 30 niños en un
+                                    período de 2 horas)
+                                </p>
+                            </div>
+                            <div
+                                class="p-4 rounded-xl bg-slate-50 border border-slate-100"
+                            >
+                                <div class="text-3xl mb-2">🧼</div>
+                                <h4 class="font-bold text-slate-800">
+                                    Higiene
+                                </h4>
+                                <p class="text-sm text-slate-500">
+                                    Esponjas limpias y pinceles desinfectados
+                                    para cada cara. Usando solo pinturas de
+                                    grado cosmético aprobadas por la FDA.
+                                </p>
+                            </div>
+                            <div
+                                class="p-4 rounded-xl bg-slate-50 border border-slate-100"
+                            >
+                                <div class="text-3xl mb-2">💲</div>
+                                <h4 class="font-bold text-slate-800">Tarifa</h4>
+                                <p class="text-sm text-slate-500">
+                                    $175 por 1 hora<br />$250 por 2 horas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cotizador de Precios Interactivo -->
+        <section class="py-20 bg-white" id="calculator">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-slate-900 serif"
+                    >
+                        Cotizador de Precios
+                    </h2>
+                    <p class="text-slate-600 mt-2">
+                        Obtén una idea aproximada del costo de tu evento.
+                        ¡Contáctame para una cotización final!
+                    </p>
+                </div>
+                <div
+                    class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col md:flex-row"
+                >
+                    <!-- Entradas -->
+                    <div class="p-8 md:w-2/3 space-y-8">
+                        <!-- Sección de Postres -->
+                        <div>
+                            <h4
+                                class="font-bold text-pink-600 mb-3 flex items-center gap-2"
+                            >
+                                <span class="material-symbols-outlined"
+                                    >cookie</span
+                                >
+                                Postres
+                            </h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Arroz con Leche (Docena)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-rice-pudding"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Flan/Gelatina (Docena)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-cookies"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Vasitos de Postre (Docena)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-dessert-cups"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Choco Flan/Tres Leches (Docena)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-macarons"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Plato de Frutas ($10 c/u)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-fruit-plate"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Piña Colada/Gansito/Galleta ($55
+                                        c/u)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-pina-colada"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Flan Entero ($60 c/u)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-whole-flan"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <label class="text-slate-700"
+                                        >Choco Flan Entero ($65 c/u)</label
+                                    >
+                                    <input
+                                        class="w-20 p-2 border rounded-lg text-center focus:ring-2 focus:ring-pink-400 outline-none"
+                                        id="qty-whole-choco-flan"
+                                        min="0"
+                                        onchange="calculateTotal()"
+                                        type="number"
+                                        value="0"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sección de Decoraciones -->
+                        <div class="border-t pt-6">
+                            <h4
+                                class="font-bold text-purple-600 mb-3 flex items-center gap-2"
+                            >
+                                <span class="material-symbols-outlined"
+                                    >filter_vintage</span
+                                >
+                                Decoraciones
+                            </h4>
+                            <div class="flex gap-4 flex-wrap">
+                                <label class="cursor-pointer select-none">
+                                    <input
+                                        class="peer sr-only"
+                                        id="decor-arch"
+                                        onchange="calculateTotal()"
+                                        type="checkbox"
+                                    />
+                                    <div
+                                        class="px-4 py-2 rounded-full border border-slate-300 text-slate-600 peer-checked:bg-purple-500 peer-checked:text-white peer-checked:border-purple-500 transition text-sm"
+                                    >
+                                        Paquete de Decoración ($600)
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Sección de Pintura Facial -->
+                        <div class="border-t pt-6">
+                            <h4
+                                class="font-bold text-blue-600 mb-3 flex items-center gap-2"
+                            >
+                                <span class="material-symbols-outlined"
+                                    >brush</span
+                                >
+                                Pintura Facial
+                            </h4>
+                            <div class="flex items-center gap-4">
+                                <label class="text-slate-700"
+                                    >Horas necesarias:</label
+                                >
+                                <input
+                                    class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                                    id="facepaint-hours"
+                                    max="2"
+                                    min="0"
+                                    oninput="
+                                        document.getElementById(
+                                            'fp-display',
+                                        ).innerText = this.value + ' hrs';
+                                        calculateTotal();
+                                    "
+                                    step="1"
+                                    type="range"
+                                    value="0"
+                                />
+                                <span
+                                    class="font-bold text-blue-600 min-w-[3rem]"
+                                    id="fp-display"
+                                    >0 hrs</span
+                                >
+                            </div>
+                            <p class="text-xs text-slate-400 mt-2">
+                                *Mínimo 2 horas generalmente requeridas por
+                                traslado.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel de Total -->
+                    <div
+                        class="bg-slate-900 text-white md:w-1/3 p-8 flex flex-col justify-between"
+                    >
+                        <div>
+                            <h3 class="text-xl font-bold mb-6">
+                                Total Estimado
+                            </h3>
+                            <div
+                                class="space-y-4 text-sm text-slate-300"
+                                id="breakdown-list"
+                            >
+                                <p class="italic opacity-50">
+                                    Selecciona artículos para ver el desglose...
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-4xl font-bold text-green-400 mb-2"
+                                id="total-price"
+                            >
+                                $0
+                            </div>
+                            <p class="text-xs text-slate-400 mb-6">
+                                No incluye impuestos ni tarifas de traslado.
+                            </p>
+                            <a
+                                class="block w-full text-center py-3 bg-white text-slate-900 font-bold rounded-lg hover:bg-slate-100 transition"
+                                href="#contact"
+                            >
+                                Reservar Este Paquete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="py-20 bg-pink-50" id="contact">
+            <div class="max-w-3xl mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                    <div class="text-center mb-10">
+                        <span
+                            class="material-symbols-outlined text-5xl text-pink-500 mb-4"
+                            >mail</span
+                        >
+                        <h2 class="text-3xl font-bold text-slate-900 serif">
+                            ¡Planifiquemos Tu Fiesta!
+                        </h2>
+                        <p class="text-slate-600 mt-2">
+                            Llena el formulario y te responderé en menos de 24
+                            horas.
+                        </p>
+                    </div>
+                    <form
+                        class="space-y-6"
+                        action="https://formspree.io/f/xqederpb"
+                        method="POST"
+                    >
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-700 mb-2"
+                                    >Nombre</label
+                                >
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition"
+                                    placeholder="María García"
+                                    type="text"
+                                    name="name"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-700 mb-2"
+                                    >Correo Electrónico</label
+                                >
+                                <input
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition"
+                                    placeholder="maria@ejemplo.com"
+                                    type="email"
+                                    name="email"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-bold text-slate-700 mb-2"
+                                >Fecha del Evento</label
+                            >
+                            <input
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition"
+                                type="date"
+                                name="event_date"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-bold text-slate-700 mb-2"
+                                >Mensaje y Detalles</label
+                            >
+                            <textarea
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition"
+                                placeholder="Cuéntame sobre el tema de tu evento, cantidad de invitados y qué servicios necesitas..."
+                                rows="4"
+                                name="message_details"
+                            ></textarea>
+                        </div>
+                        <button
+                            class="w-full py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-lg hover:opacity-90 transition shadow-lg transform hover:-translate-y-0.5"
+                            type="submit"
+                        >
+                            Enviar Mensaje
+                        </button>
+                        <a
+                            class="w-full py-4 bg-[#25D366] text-white font-bold rounded-lg hover:opacity-90 transition shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center gap-2 mt-4"
+                            href="https://wa.me/13476414965"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                class="w-5 h-5 fill-current"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                                />
+                            </svg>
+                            Mensaje por WhatsApp
+                        </a>
+                    </form>
+                </div>
+                <div class="mt-12 flex justify-center gap-8 text-slate-500">
+                    <a
+                        class="hover:text-pink-500 flex flex-col items-center gap-1"
+                        href="#"
+                    >
+                        <span class="material-symbols-outlined">call</span>
+                        <span class="text-xs font-bold">555-0123</span>
+                    </a>
+                    <a
+                        class="hover:text-purple-500 flex flex-col items-center gap-1"
+                        href="#"
+                    >
+                        <span class="material-symbols-outlined"
+                            >location_on</span
+                        >
+                        <span class="text-xs font-bold">New York, NY</span>
+                    </a>
+                    <a
+                        class="hover:text-blue-500 flex flex-col items-center gap-1"
+                        href="#"
+                    >
+                        <span class="material-symbols-outlined"
+                            >alternate_email</span
+                        >
+                        <span class="text-xs font-bold">@MaccDecor</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Pie de Página -->
+        <footer
+            class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800"
+        >
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <p>© 2026 MaccDecor Eventos. Todos los derechos reservados.</p>
+                <p class="text-xs mt-2">Diseñado para emprendedores.</p>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
