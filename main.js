@@ -136,3 +136,18 @@ menu.querySelectorAll("a").forEach((link) => {
     menu.classList.add("hidden");
   });
 });
+
+// Set minimum date to today for all event date fields
+(function setEventDateMinToday() {
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth() + 1).padStart(2, "0");
+  const dd = String(today.getDate()).padStart(2, "0");
+  const minDate = `${yyyy}-${mm}-${dd}`;
+
+  document
+    .querySelectorAll('input[type="date"][name="event_date"]')
+    .forEach((input) => {
+      input.min = minDate;
+    });
+})();
